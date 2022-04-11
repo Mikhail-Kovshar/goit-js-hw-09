@@ -51,6 +51,7 @@ const options = {
     }, 1000);
     startBtn.setAttribute('disabled', true)
     Notiflix.Notify.success('Start timer');
+    input.setAttribute('disabled', true)
   }
   
   function stopTimer() {
@@ -59,6 +60,7 @@ const options = {
     });
     
     clearInterval(timerId);
+    input.removeAttribute('disabled', true)
   }
   
 //   function timerСheck() {
